@@ -1,0 +1,32 @@
+strong{
+    font-size: 40px;
+}
+i{
+    font-size: 50px; 
+}
+.form-control{
+    border-radius: 4px;
+    width: 600px;
+    margin-left: 200px;
+}
+.btn-secondary{
+    width: 100px;
+    height: 40px;
+}
+.text-light{
+    margin-left: 80px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.badge bg-danger{
+    font-size: 10px;
+}
+.navbar{
+    background-color: #6610f2;
+}
+.cartcolr{
+    background-color: #6610f2;
+    color: white;
+}

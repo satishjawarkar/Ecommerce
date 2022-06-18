@@ -1,0 +1,49 @@
+<!-- <div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class="item">
+            <a>
+                <img src="" alt="">
+                <h6>All Products</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a>
+                <img src="" alt="">
+                <h6>Electronics</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a>
+                <img src="" alt="">
+                <h6>Fashion</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a>
+                <img src="" alt="">
+                <h6>Jewllery</h6>
+            </a>
+        </div>
+    </div>
+</div> -->
+<!-- All Product page -->
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of productList | filterText:searchKey:'title' ">
+            <div class="card col-md-3 mt-3 ">
+                <img src="{{item.image}}" alt="">
+                <h4>{{item.title}}</h4>
+                <p>{{item.description}}</p>            
+                <p><strong>Price:</strong> ${{item.price}}</p>
+                <button class="btn btn-success mb-3" (click)="addtoCart(item)">Add to cart</button>
+            </div>
+        </ng-container>
+          
+    </div>
+</div>
+<footer class="p-3 mb-2 bg-dark text-white">
+    <div class="container text-center">
+      <p class="font-italic text-muted mb-0">&copy; Copyrights satishgautam.com All rights reserved.</p>
+    </div>
+  </footer>
+  

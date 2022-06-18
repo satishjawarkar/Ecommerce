@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Ecommerce';
+  value = 'Wellcome to gautams';
+  date = new Date()
+// lazyloading component
+  constructor(){
+
+  }
 }

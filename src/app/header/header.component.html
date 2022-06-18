@@ -1,0 +1,20 @@
+<header>
+    <div class="navbar shadow-sm">
+        <div class="navbar-brand align-item-center d-flex">
+            <i class="fas fa-shipping-fast">&nbsp;
+            </i>
+            <strong>Gautam's</strong>
+            <div class="form-group">
+                <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="search products">
+            </div>
+            <button type="button" (click)="search" class="btn btn-secondary">Search</button>
+            <a routerLink="/product" class="text-light">Home</a>
+            <a href="/contactus" class="text-light">Contactus</a>
+            <a href="/aboutus" class="text-light">AboutUs</a>
+        </div>
+        <button routerLink="/cart" class="byn cartcolr">
+            <i class="fas fa-cart-plus" id="cart"><h4>Cart</h4></i>
+            <div class="badge bg-danger">{{totalItem}}</div>
+        </button>
+    </div>
+</header> 
